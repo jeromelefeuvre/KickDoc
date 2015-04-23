@@ -28,9 +28,12 @@ html lang="en"
             span.icon-bar
             span.icon-bar
           a.navbar-brand href=root_path
-            | KickDoc
-          .navbar-collapse.collapse.navbar-responsive-collapse
+            span.strong
+              | KickDoc
+            small.em
+              |  (Express Yourself)
 
+          .navbar-collapse.collapse.navbar-responsive-collapse
             ul.nav.navbar-nav.navbar-right
               li
                 form.navbar-form.navbar-left role="search"
@@ -60,4 +63,4 @@ html lang="en"
                   = link_to category.humanize, "?category=%s" % category
 
       footer
-        p &copy; Company 2015
+        p &copy; NFB/ONF 2015
